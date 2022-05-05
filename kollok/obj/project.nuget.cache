@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/elzN2QmZ+oi6LdCsDkYIcQskwvPAIbg8TOT1+GOtUFXAuGU6Ui4cgIhJnyM1YMKp5ylkUCitF9hOU3JFqXahg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\slava\\source\\repos\\kollok\\kollok\\kollok.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slava\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
