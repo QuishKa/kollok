@@ -6,7 +6,9 @@ let rec input() =
         with
             | :? System.Exception -> printfn "Enter a number."; input()
 
-let modules = ["example"; "Greatest common divisor"]
+let modules = [ "example"; 
+                "Greatest common divisor"; 
+                "Lemma 7.5" ]
 let mutable work = true
 while work do
     Console.Clear()
@@ -19,5 +21,6 @@ while work do
         | 0 -> work <- false
         | 1 -> example.run()
         | 2 -> gcd.run()
+        | 3 -> Lemma7_5.run()
     printfn "The module finished. Press any key to continue..."
     Console.ReadKey() |> ignore
