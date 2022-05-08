@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\slava\\source\\repos\\kollok\\kollok\\kollok.fsproj": {}
+    "D:\\VisualStudioProjects\\kollok\\kollok\\kollok.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\slava\\source\\repos\\kollok\\kollok\\kollok.fsproj": {
+    "D:\\VisualStudioProjects\\kollok\\kollok\\kollok.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\slava\\source\\repos\\kollok\\kollok\\kollok.fsproj",
+        "projectUniqueName": "D:\\VisualStudioProjects\\kollok\\kollok\\kollok.fsproj",
         "projectName": "kollok",
-        "projectPath": "C:\\Users\\slava\\source\\repos\\kollok\\kollok\\kollok.fsproj",
-        "packagesPath": "C:\\Users\\slava\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\slava\\source\\repos\\kollok\\kollok\\obj\\",
+        "projectPath": "D:\\VisualStudioProjects\\kollok\\kollok\\kollok.fsproj",
+        "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
+        "outputPath": "D:\\VisualStudioProjects\\kollok\\kollok\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\slava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,7 +38,7 @@
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[6.0.2, )",
+              "version": "[6.0.1, )",
               "generatePathProperty": true
             }
           },
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
