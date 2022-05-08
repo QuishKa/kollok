@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Modules\gcd.fs" />
     <Compile Include="Modules\example.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>

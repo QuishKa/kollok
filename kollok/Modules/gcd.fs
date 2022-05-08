@@ -14,7 +14,8 @@
         if y = 0 then x
         else gcd y (x % y)
     
-    let run = 
+    let run() = 
+        printfn "This module finds the greatest common divisor.\nInput 2 integers to start."
         let xy = input
         if xy.Length = 2 then Console.WriteLine(gcd xy[0] xy[1])
         else Console.WriteLine("There must be two integers")

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "FSharp.Core/6.0.1": {
+      "FSharp.Core/6.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {}
@@ -62,17 +62,17 @@
     }
   },
   "libraries": {
-    "FSharp.Core/6.0.1": {
-      "sha512": "VrFAiW8dEEekk+0aqlbvMNZzDvYXmgWZwAt68AUBqaWK8RnoEVUNglj66bZzhs4/U63q0EfXlhcEKnH1sTYLjw==",
+    "FSharp.Core/6.0.2": {
+      "sha512": "8GZqv6buY71KQlWT+cl2eMi+aNX9xQ61RgI3Pzv9zPxPOX6tWCLRrBj0MYQ3h871r2RhiHUl7f0AXUD/POr8eA==",
       "type": "package",
-      "path": "fsharp.core/6.0.1",
+      "path": "fsharp.core/6.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "contentFiles/any/netstandard2.0/FSharp.Core.xml",
         "contentFiles/any/netstandard2.1/FSharp.Core.xml",
-        "fsharp.core.6.0.1.nupkg.sha512",
+        "fsharp.core.6.0.2.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -109,23 +109,23 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "FSharp.Core >= 6.0.1"
+      "FSharp.Core >= 6.0.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Иван\\.nuget\\packages\\": {}
+    "C:\\Users\\slava\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VisualStudioProjects\\kollok\\kollok\\kollok.fsproj",
+      "projectUniqueName": "C:\\Users\\slava\\source\\repos\\kollok\\kollok\\kollok.fsproj",
       "projectName": "kollok",
-      "projectPath": "D:\\VisualStudioProjects\\kollok\\kollok\\kollok.fsproj",
-      "packagesPath": "C:\\Users\\Иван\\.nuget\\packages\\",
-      "outputPath": "D:\\VisualStudioProjects\\kollok\\kollok\\obj\\",
+      "projectPath": "C:\\Users\\slava\\source\\repos\\kollok\\kollok\\kollok.fsproj",
+      "packagesPath": "C:\\Users\\slava\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\slava\\source\\repos\\kollok\\kollok\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Иван\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\slava\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -149,7 +149,7 @@
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[6.0.1, )",
+            "version": "[6.0.2, )",
             "generatePathProperty": true
           }
         },
@@ -168,7 +168,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

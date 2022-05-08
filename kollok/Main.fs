@@ -1,13 +1,12 @@
 ﻿open System
-let input() = 
-    let x = Console.ReadLine().Split()
-    [for i in x -> 
-        try
-            Convert.ToInt32(i)
-        with
-            | :? System.Exception -> printfn $"Skipped value \"{i}\", not a number"; 0]
 
-let modules = ["example"]
+let rec input() = 
+        try 
+            Convert.ToInt32(Console.ReadLine())
+        with
+            | :? System.Exception -> printfn "Enter a number."; input()
+
+let modules = ["example"; "Greatest common divisor"]
 let mutable work = true
 while work do
     Console.Clear()
@@ -16,13 +15,9 @@ while work do
     for i in modules do
         count <- count + 1
         printfn "%d: %s" count i
-    let rec input() = 
-        try 
-            Convert.ToInt32(Console.ReadLine())
-        with
-            | :? System.Exception -> printfn "Enter a number."; input()
     match input() with
         | 0 -> work <- false
-        | 1 -> example.run;
+        | 1 -> example.run()
+        | 2 -> gcd.run()
     printfn "The module finished. Press any key to continue..."
     Console.ReadKey() |> ignore
