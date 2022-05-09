@@ -15,27 +15,23 @@ module Berezkin
                 with
                     | :? System.Exception -> printfn "Enter a number."; input()
 
-
-        let mutable x = input() //Осуществим ввод переменной с клавиатуры
-        x <- x + 1 // Проведем последовательность действий
-        x <- x + 1
-        x <- x + 1
-        x <- x + 1
-
-        let mutable a = input()
-        let _  = a <- a + 1 in // Проведем последовательность действий
-        let _  = a <- a + 1 in
-        let _  = a <- a + 1 in
-        let _  = a <- a + 1 in
-
-        let mutable data = [] 
-        data <- Input() //Ввод данных с клавиатуры
-        let refData = ref data
-
         let run() =
-        printf $"{x}\n" // Выведем результат
-        printf $"{a}\n" // Выведем результат
-        printfn "%A\n" refData // Выведем результат
+            let mutable a = input()
+            let _  = a <- a + 1 in // Проведем последовательность действий
+            let _  = a <- a + 1 in
+            let _  = a <- a + 1 in
+            let _  = a <- a + 1 in
+            let mutable x = input() //Осуществим ввод переменной с клавиатуры
+            x <- x + 1 // Проведем последовательность действий
+            x <- x + 1
+            x <- x + 1
+            x <- x + 1
+            let mutable data = [] 
+            data <- Input() //Ввод данных с клавиатуры
+            let refData = ref data
+            printf $"{x}\n" // Выведем результат
+            printf $"{a}\n" // Выведем результат
+            printfn "%A\n" refData // Выведем результат
 
 
         //let swap(x) =

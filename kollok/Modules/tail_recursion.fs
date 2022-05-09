@@ -9,18 +9,14 @@ module tail_recursion
     let fact n = tfact 1 n
 
 
-    let input = 
-        let xy = Console.ReadLine().Split()
-        [for i in xy -> 
-            try
-                Convert.ToInt32(i)
+    let rec input() = 
+            try 
+                Convert.ToInt32(Console.ReadLine())
             with
-                | :? System.Exception -> printfn $"This value is not an integer: {i}"; 0
-        ]
+                | :? System.Exception -> printfn "Enter a number."; input()
 
     let run() =
         printf "\nThis module is designed to calculate the factorial of a number using tail recursion\n"
-        prinf "\nEnter a single integer\n"
-        let n = input
-        if n.Length = 1 then Console.WriteLine(fact n)
-        else printf "\nA single integer must be supplied to the input\n"
+        printf "\nEnter a single integer\n"
+        let n = input()
+        Console.WriteLine(fact n)

@@ -1,4 +1,4 @@
-﻿module kollok.Modules.differentiation
+﻿module differentiation
 
 type term = //Discriminated unions (Размеченные объединения)
     | Var of string

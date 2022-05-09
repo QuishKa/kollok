@@ -33,7 +33,7 @@
             else
                 (analyse input.[1..input.Length] (c.ToString()) (add_elem_to_list current_part result) (get_char_type c))
 
-    let run = 
+    let run() = 
         Console.Write("Enter the string: ")
         let a = Console.ReadLine();
         let result = analyse a "" [] 0
