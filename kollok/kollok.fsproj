@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Modules\power.fs" />
     <Compile Include="Modules\order_relation.fs" />
     <Compile Include="Modules\exn.fs" />
     <Compile Include="Modules\concatination.fs" />
