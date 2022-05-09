@@ -9,7 +9,7 @@ let rec input() =
 // to run a module from main add its name in list and invoke run() function as with example
 let modules = [ "example"; 
                 "Greatest common divisor"; 
-                "Lemma 7.5" ]
+                "List Reversal, Lemma 7.5" ]
 //
 let mutable work = true
 while work do
