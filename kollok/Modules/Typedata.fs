@@ -1,4 +1,4 @@
-﻿open System
+open System
 
 let Input() = 
         let y = Console.ReadLine().Split()
@@ -14,7 +14,7 @@ let rec input() =
         with
             | :? System.Exception -> printfn "Enter a number."; input()
 
-                
+
 let mutable x = input() //Осуществим ввод переменной с клавиатуры
 x <- x + 1 // Проведем последовательность действий
 x <- x + 1
@@ -30,7 +30,8 @@ let _  = a <- a + 1 in
 let mutable data = [] 
 data <- Input() //Ввод данных с клавиатуры
 let refData = ref data
-
+                
+let run() =
 printf $"{x}\n" // Выведем результат
 printf $"{a}\n" // Выведем результат
 printfn "%A\n" refData // Выведем результат
@@ -42,46 +43,3 @@ printfn "%A\n" refData // Выведем результат
 //    with
 //    | :? System.Exception -> printfn $"Error in change!"; При попытке присвоения через операцию try with data значений нового типа boolean возникает ошибка типизации данных
 //swap(data)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
