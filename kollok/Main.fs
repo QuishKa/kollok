@@ -27,6 +27,6 @@ while work do
         | 2 -> gcd.run()
         | 3 -> Lemma7_5.run()
         | 4 -> concatination.run()
-        | 5 -> exn.run() |> ignore
+        | 5 -> exn.run()
     printfn "The module finished. Press any key to continue..."
     Console.ReadKey() |> ignore
