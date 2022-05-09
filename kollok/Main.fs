@@ -12,7 +12,8 @@ let modules = [ "example";
                 "List Reversal, Lemma 7.5" 
                 "Concatenation" 
                 "Exceptions" 
-                "Order relations" ]
+                "Order relations" 
+                "Power" ]
 
 let mutable work = true
 while work do
@@ -30,5 +31,6 @@ while work do
         | 4 -> concatination.run()
         | 5 -> exn.run()
         | 6 -> order_relation.run()
+        | 7 -> power.run()
     printfn "The module finished. Press any key to continue..."
     Console.ReadKey() |> ignore
