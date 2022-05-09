@@ -11,7 +11,8 @@ let modules = [ "example";
                 "Greatest common divisor"; 
                 "List Reversal, Lemma 7.5" 
                 "Concatenation" 
-                "Exceptions" ]
+                "Exceptions" 
+                "Order relations" ]
 
 let mutable work = true
 while work do
@@ -28,5 +29,6 @@ while work do
         | 3 -> Lemma7_5.run()
         | 4 -> concatination.run()
         | 5 -> exn.run()
+        | 6 -> order_relation.run()
     printfn "The module finished. Press any key to continue..."
     Console.ReadKey() |> ignore
