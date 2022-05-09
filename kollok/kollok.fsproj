@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Modules\exn.fs" />
     <Compile Include="Modules\concatination.fs" />
     <Compile Include="Modules\lemma75.fs" />
     <Compile Include="Modules\gcd.fs" />
