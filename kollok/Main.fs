@@ -9,7 +9,8 @@ let rec input() =
 
 let modules = [ "example"; 
                 "Greatest common divisor"; 
-                "List Reversal, Lemma 7.5" ]
+                "List Reversal, Lemma 7.5" 
+                "Concatenation" ]
 
 let mutable work = true
 while work do
@@ -24,5 +25,6 @@ while work do
         | 1 -> example.run() // to run your module replace the example and type "1" in console
         | 2 -> gcd.run()
         | 3 -> Lemma7_5.run()
+        | 4 -> concatination.run()
     printfn "The module finished. Press any key to continue..."
     Console.ReadKey() |> ignore
