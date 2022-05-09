@@ -6,11 +6,11 @@ let rec input() =
         with
             | :? System.Exception -> printfn "Enter a number."; input()
 
-// to run a module from main add its name in list and invoke run() function as with example
+
 let modules = [ "example"; 
                 "Greatest common divisor"; 
                 "List Reversal, Lemma 7.5" ]
-//
+
 let mutable work = true
 while work do
     Console.Clear()
@@ -21,7 +21,7 @@ while work do
         printfn "%d: %s" count i
     match input() with
         | 0 -> work <- false
-        | 1 -> example.run() // run example module (the number indicates the position of the module in the list)
+        | 1 -> example.run() // to run your module replace the example and type "1" in console
         | 2 -> gcd.run()
         | 3 -> Lemma7_5.run()
     printfn "The module finished. Press any key to continue..."
