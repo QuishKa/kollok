@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Modules\Lemma_74.fs" />
+    <Compile Include="Modules\Theorem76.fs" />
+    <Compile Include="Modules\tail_recursion.fs" />
+    <Compile Include="Modules\lexical_analyzer.fs" />
+    <Compile Include="Modules\Typedata.fs" />
     <Compile Include="Modules\power.fs" />
     <Compile Include="Modules\order_relation.fs" />
     <Compile Include="Modules\exn.fs" />
@@ -13,6 +18,7 @@
     <Compile Include="Modules\lemma75.fs" />
     <Compile Include="Modules\gcd.fs" />
     <Compile Include="Modules\example.fs" />
+    <Compile Include="Modules\differentiation.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>
 

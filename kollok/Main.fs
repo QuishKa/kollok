@@ -13,7 +13,13 @@ let modules = [ "example";
                 "Concatenation" 
                 "Exceptions" 
                 "Order relations" 
-                "Power" ]
+                "Power"
+                "Type data"
+                "Tail recursion"
+                "Lexical analyzer"
+                "Differentiation"
+                "List Reversal, Theorem 7.6"
+                "List Reversal, Lemma 7.4" ]
 
 let mutable work = true
 while work do
@@ -32,5 +38,11 @@ while work do
         | 5 -> exn.run()
         | 6 -> order_relation.run()
         | 7 -> power.run()
+        | 8 -> Berezkin.run()
+        | 9 -> tail_recursion.run()
+        | 10 -> lexical_analyzer.run()
+        | 11 -> differentiation.run()
+        | 12 -> Theorem76.run()
+        | 13 -> Lemma_74.run()
     printfn "The module finished. Press any key to continue..."
     Console.ReadKey() |> ignore
