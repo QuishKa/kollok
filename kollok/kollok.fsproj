@@ -12,6 +12,7 @@
     <Compile Include="Modules\lemma75.fs" />
     <Compile Include="Modules\gcd.fs" />
     <Compile Include="Modules\example.fs" />
+    <Compile Include="Modules\differentiation.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>
 
