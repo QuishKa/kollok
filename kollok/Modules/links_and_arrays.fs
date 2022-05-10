@@ -1,6 +1,6 @@
 module links_and_arrays
 
-  let input = fun () ->
+  let input() = 
     System.Convert.ToInt32(System.Console.ReadLine());
 
   let run() = 
@@ -22,4 +22,3 @@ module links_and_arrays
     printfn "Replacing element at index 1 with 10: %A" array;
     printfn "The value of the element at index 1: %d " (Array.get array 1);
     printfn "Press any key..."
-    x := System.Convert.ToInt32(System.Console.ReadLine());
