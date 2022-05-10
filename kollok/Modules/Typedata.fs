@@ -15,30 +15,31 @@ module Berezkin   (*Программа проводит работу с посл
                 Convert.ToInt32(Console.ReadLine())
             with
                 | :? System.Exception -> printfn "Enter a number."; input()
-
-    printf $"Введите значение x: "
-    let mutable x = input() //Осуществим ввод переменной с клавиатуры
-    x <- x + 1 // Проведем последовательность действий
-    x <- x + 1
-    x <- x + 1
-    x <- x + 1
-    printf $"Введите значение a: "
-    let mutable a = input()
-    let _  = a <- a + 1 in // Проведем последовательность действий
-    let _  = a <- a + 1 in
-    let _  = a <- a + 1 in
-    let _  = a <- a + 1 in
-    printf $"Введите значения массива data(без пробелов): "
-    let mutable data = [] 
-    data <- Input() //Ввод данных с клавиатуры
-    let refData = ref data
                 
     let run() =
-    printf $"{x}\n" // Выведем результат
-    printf $"{a}\n" // Выведем результат
-    printfn "%A\n" refData // Выведем результат
-
-
+        printf $"Enter number x: "
+        let mutable x = input() //Осуществим ввод переменной с клавиатуры
+        x <- x + 1 // Проведем последовательность действий
+        x <- x + 1
+        x <- x + 1
+        x <- x + 1
+        printf $"Enter number a: "
+        let mutable a = input()
+        let _  = a <- a + 1 in // Проведем последовательность действий
+        let _  = a <- a + 1 in
+        let _  = a <- a + 1 in
+        let _  = a <- a + 1 in
+        printf $"Enter array data: "
+        let mutable data = [] 
+        data <- Input() //Ввод данных с клавиатуры
+        match List.tryFindIndex(fun x -> x = 0) data with
+            | Some index -> data <- List.removeAt index data
+            | None -> None |> ignore
+        let refData = ref data
+        printf $"{x}\n" // Выведем результат
+        printf $"{a}\n" // Выведем результат
+        printfn "%A\n" refData // Выведем результат
+    
     //let swap(x) =
         //try
             //x <- true

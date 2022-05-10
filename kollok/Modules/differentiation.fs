@@ -123,5 +123,5 @@ let derive (x: string) (f:term) =
     toStr (dsimp (differentiate x f))
   
 let run() =
-    printf "Open this module in F# Interactive"
+    printfn "Open this module in F# Interactive"
   
