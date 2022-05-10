@@ -16,10 +16,10 @@ module links_and_arrays
     printfn "The current value of the variable without dereference: %A" x;
 
     let array = [| for i in 1 .. 5 -> 0 |];
-    printfn "T: %A" array;
+    printfn "Array: %A" array;
     printfn "The value of the element at index 1: %d" (Array.get array 1);
     Array.set array 1 10;
     printfn "Replacing element at index 1 with 10: %A" array;
-    printf "The value of the element at index 1: %d " (Array.get array 1);
+    printfn "The value of the element at index 1: %d " (Array.get array 1);
     printfn "Press any key..."
     x := System.Convert.ToInt32(System.Console.ReadLine());
