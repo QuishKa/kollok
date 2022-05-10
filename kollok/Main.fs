@@ -19,7 +19,9 @@ let modules = [ "example";
                 "Lexical analyzer"
                 "Differentiation"
                 "List Reversal, Theorem 7.6"
-                "List Reversal, Lemma 7.4" ]
+                "List Reversal, Lemma 7.4"
+                "Inverse number"
+                "Useful combinator" ]
 
 let mutable work = true
 while work do
@@ -44,5 +46,7 @@ while work do
         | 11 -> differentiation.run()
         | 12 -> Theorem76.run()
         | 13 -> Lemma_74.run()
+        | 14 -> inverse_number.run()
+        | 15 -> useful_combinator.run()
     printfn "The module finished. Press any key to continue..."
     Console.ReadKey() |> ignore

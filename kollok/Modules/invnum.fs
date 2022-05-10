@@ -29,10 +29,9 @@
 
         (2.0**(n+k)) / (c/10.0**k)
         
-    let run =
+    let run() =
         printfn "Enter a number the inverse version of which you want to calculate"
         let a = Convert.ToDouble(Console.ReadLine())
         printfn "Enter the precision"
         let b = Convert.ToDouble(Console.ReadLine())
         Console.WriteLine(real_inv a b)
-        0

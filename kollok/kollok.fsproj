@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Modules\useful_combinator.fs" />
+    <Compile Include="Modules\invnum.fs" />
     <Compile Include="Modules\Lemma_74.fs" />
     <Compile Include="Modules\Theorem76.fs" />
     <Compile Include="Modules\tail_recursion.fs" />

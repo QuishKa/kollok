@@ -1,7 +1,7 @@
 ﻿module gcd
     open System
     
-    let input = 
+    let input() = 
         let xy = Console.ReadLine().Split()
         [for i in xy -> 
             try
@@ -16,6 +16,6 @@
     
     let run() = 
         printfn "This module finds the greatest common divisor.\nInput 2 integers to start."
-        let xy = input
+        let xy = input()
         if xy.Length = 2 then Console.WriteLine(gcd xy[0] xy[1])
         else Console.WriteLine("There must be two integers")
