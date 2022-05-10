@@ -21,7 +21,8 @@ let modules = [ "example";
                 "List Reversal, Theorem 7.6"
                 "List Reversal, Lemma 7.4"
                 "Inverse number"
-                "Useful combinator" ]
+                "Useful combinator"
+                "Geometric coordinates" ]
 
 let mutable work = true
 while work do
@@ -48,5 +49,6 @@ while work do
         | 13 -> Lemma_74.run()
         | 14 -> inverse_number.run()
         | 15 -> useful_combinator.run()
+        | 16 -> Geometric_coordinates.run()
     printfn "The module finished. Press any key to continue..."
     Console.ReadKey() |> ignore

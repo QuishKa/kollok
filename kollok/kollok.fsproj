@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Modules\Geometric_coordinates.fs" />
     <Compile Include="Modules\useful_combinator.fs" />
     <Compile Include="Modules\invnum.fs" />
     <Compile Include="Modules\Lemma_74.fs" />
